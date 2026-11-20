@@ -10,10 +10,11 @@ class Bioskop08{
         penonton[3][0] = "Gisel";
         penonton[3][1] = "Hana";
         System.out.println(penonton.length);
-        System.out.println(penonton[0].length);
-        System.out.println(penonton[1].length);
-        System.out.println(penonton[2].length);
-        System.out.println(penonton[3].length);
+        for (int i = 0; i < penonton.length; i++) { {
+                System.out.print("Panjang baris ke-" +(i+1) + ": "+ penonton[i].length);
+            }
+            System.out.println();
+        }
         System.out.printf("%s \t%s \n", penonton[0][0], penonton[0][1]);
         System.out.printf("%s \t%s \n", penonton[1][0], penonton[1][1]);
         System.out.printf("%s \t%s \n", penonton[2][0], penonton[2][1]);
