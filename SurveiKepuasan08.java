@@ -8,7 +8,6 @@ public class SurveiKepuasan08 {
         for (int i = 0; i < 10; i++) {
             System.out.println("Responden ke-" + (i + 1));
             int total = 0;
-
             for (int j = 0; j < 6; j++) {
                 System.out.print("Pertanyaan ke-" + (j + 1) + ": ");
                 nilai[i][j] = sc.nextInt();
@@ -16,6 +15,17 @@ public class SurveiKepuasan08 {
             }
             double rata = total / 6.0;
             System.out.println("Rata-rata responden" + (i + 1) + ": " + rata);
+        }
+
+        System.out.println("\nRata-rata Pertanyaan");
+        for (int j = 0; j < 6; j++) {
+            int total = 0;
+            for (int i = 0; i < 10; i++) {
+                total += nilai[i][j];
+            }
+            System.out.println(
+                "Pertanyaan " + (j + 1) + ": " + (total / 10.0)
+            );
         }
     }
 }
