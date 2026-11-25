@@ -23,9 +23,18 @@ public class SurveiKepuasan08 {
             for (int i = 0; i < 10; i++) {
                 total += nilai[i][j];
             }
+            double ratatanya = total/10.0;
             System.out.println(
-                "Pertanyaan " + (j + 1) + ": " + (total / 10.0)
-            );
+                    "Pertanyaan " + (j + 1) + ": " + ratatanya);
         }
+        int total = 0;
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < 6; j++) {
+                total += nilai[i][j];
+            }
+        }
+        double ratasemua = total / 60.0;
+        System.out.println(
+                "\nRata-rata keseluruhan : " + ratasemua);
     }
 }
